@@ -72,11 +72,9 @@ If you wish to build for only one platform please ask for help: ``./build.sh -h|
 
 EOF
 
-# --platform linux/amd64,linux/arm64,linux/arm/v7 \
-
 time docker buildx build \
     --push \
     --build-arg NODE_VERSION=${NODE} \
-    --platform linux/arm/v7 \
+    --platform linux/amd64,linux/arm64,linux/arm/v7 \
     ${LATEST} \
     -t ${REPO}:${TAG} .
