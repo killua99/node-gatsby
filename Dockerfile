@@ -45,6 +45,6 @@ RUN set -eux; \
 
 RUN set -eux; \
     apt-get autoremove -qq; \
-    apt-get autoclear
+    apt-get autoclean
 
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
