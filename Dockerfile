@@ -17,8 +17,7 @@ RUN set -eux; \
         libpng-dev \
         tini \
     ; \
-    rm -rf /var/lib/apt/lists/*; \
-    update-ca-certificates -f
+    rm -rf /var/lib/apt/lists/*
 
 RUN set -eux; \
     update-ca-certificates -f; \
